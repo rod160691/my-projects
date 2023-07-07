@@ -1,46 +1,51 @@
 #include <stdio.h>
 /**
- * main - print granding system.
- *
- * Return: Always 0.
+ * main - solving an assignment
+ * description - A progragram for computing a school granding system
+ * 80 - 100 == A
+ * 70 - 79  == B
+ * 60 - 69  == C
+ * 50 - 59  == D
+ * 45 - 49  == E
+ * BELOW 45 == F
+ * Return: Always 0
  */
 
 int main(void)
 {
-	float n;
-	n = (n >= 0 && n <= 100);
-	printf("Enter n: ");
-	scanf("%f", &n);
-	char A;
-	char B;
-	char C;
-	char D;
-	char E;
-	char F;
+	float marks;
 
-	if (n >= 80 && n <= 100)
-	{
-		printf("grade A\n");
-	}
-	else if (n >= 70 && n <= 79)
-		{
-			printf("B\n");
-		}
-		else if (n >= 60 && n <= 69)
+	printf("Enter marks: ");
+	scanf("%f", &marks);
+
+
+			if (marks >= 80 && marks <= 100)
+			{
+				printf("A\n");
+			}
+			else if (marks >= 70 && marks <= 79)
+			{
+				printf("B\n");
+			}
+			else if (marks >= 60 && marks <= 69)
 			{
 				printf("C\n");
 			}
-			else if (n >= 50 && n <= 59)
+			else if (marks >= 50 && marks <= 59)
 			{
-					printf("D\n");
+				printf("D\n");
 			}
-			else if (n >= 45 && n <= 49)
+			else if (marks >= 45 && marks <= 49)
 			{
-						printf("E\n");
+				printf("E\n");
 			}
-			else if (n >= 0 && n <= 44)
+			else if (marks >= 0 && marks <= 44)
 			{
-							printf("F\n");
+				printf("F\n");
+			}
+			else
+			{
+				printf("you entered an invalid marks\n");
 			return (0);
 			}
 }
