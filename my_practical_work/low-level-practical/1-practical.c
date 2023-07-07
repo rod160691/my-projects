@@ -18,7 +18,6 @@ int main(void)
 	printf("Enter marks: ");
 	scanf("%f", &marks);
 
-
 			if (marks >= 80 && marks <= 100)
 			{
 				printf("A\n");
@@ -39,7 +38,7 @@ int main(void)
 			{
 				printf("E\n");
 			}
-			else if (marks >= 0 && marks <= 44)
+			else if (marks >= 0 && marks < 45)
 			{
 				printf("F\n");
 			}
